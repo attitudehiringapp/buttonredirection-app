@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar URL</title>
+</head>
+<body>
+    <h1>Selecciona una URL</h1>
+    <button onclick="redirigir('https://apps.apple.com/es/app/attitude-hiring/id6736949254')">App Store</button>
+    <button onclick="redirigir('https://play.google.com/store/apps/details?id=com.niveliv.AppWebTTIPubAttitude&pcampaignid=web_share')">Google Play</button>
+    <button onclick="redirigir('https://portal.attitude.tech/Trabajadores/Candi/Candisaludo.aspx')">Página web</button>
+
+    <script>
+        function redirigir(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
