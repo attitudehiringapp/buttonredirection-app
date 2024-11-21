@@ -4,12 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seleccionar URL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #eef6fc;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 50px;
+            color: #004085;
+        }
+        .button-container {
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 300px;
+        }
+        button {
+            background-color: #b8daff;
+            color: #004085;
+            border: 1px solid #91c2f6;
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        button:hover {
+            background-color: #91c2f6;
+            transform: translateY(-2px);
+        }
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
-    <h1>Selecciona una URL</h1>
-    <button onclick="redirigir('https://apps.apple.com/es/app/attitude-hiring/id6736949254')">App Store</button>
-    <button onclick="redirigir('https://play.google.com/store/apps/details?id=com.niveliv.AppWebTTIPubAttitude&pcampaignid=web_share')">Google Play</button>
-    <button onclick="redirigir('https://portal.attitude.tech/Trabajadores/Candi/Candisaludo.aspx')">Página web</button>
+    <h1>Selecciona una opción</h1>
+    <div class="button-container">
+        <button onclick="redirigir('https://play.google.com/store/apps/details?id=com.niveliv.AppWebTTIPubAttitude&pcampaignid=web_share')">Play Store</button>
+        <button onclick="redirigir('https://apps.apple.com/es/app/attitude-hiring/id6736949254')">App Store</button>
+        <button onclick="redirigir('https://portal.attitude.tech/Trabajadores/Candi/Candisaludo.aspx')">Plataforma Trabajador</button>
+        <button onclick="redirigir('https://portal.attitude.tech/Clientes/Privado/Login.aspx?ReturnUrl=%2fClientes%2fPrivado%2fSesionfin.aspx')">Plataforma Cliente</button>
+    </div>
 
     <script>
         function redirigir(url) {
