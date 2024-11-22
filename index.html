@@ -16,11 +16,13 @@
             width: 100%;
         }
         header img {
-            width: 100%; /* La imagen ocupa el ancho completo del contenedor */
-            height: auto; /* Ajusta la altura proporcionalmente */
+            display: block; /* Elimina espacios extra causados por inline-block */
+            max-width: 100%; /* La imagen no sobrepasa el ancho del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
+            margin: 0 auto; /* Centra la imagen si sobra espacio */
         }
         h1 {
-            margin-top: 20px;
+            margin-top: 10px; /* Reduce la distancia con la imagen */
             font-size: 40px;
             color: #004085;
         }
@@ -64,7 +66,7 @@
         <img src="https://attitudehiringapp.github.io/buttonredirection-app/2BannerLinkedIn.png" alt="Encabezado Attitude & Hiring">
     </header>
     <h1>Attitude & Hiring</h1>
-    <h2>Descarga nuestra App o accede a nuestra plataforma y registrate</h2>
+    <h2>Descarga nuestra App o accede a nuestra plataforma y regístrate</h2>
     <h3>Selecciona una opción</h3>
     <div class="button-container">
         <button onclick="redirigir('https://play.google.com/store/apps/details?id=com.niveliv.AppWebTTIPubAttitude&pcampaignid=web_share')">Play Store</button>
