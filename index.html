@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attitude & Hiring</title>
+    <title></title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,10 +16,11 @@
             width: 100%;
         }
         header img {
-            display: block; /* Elimina espacios extra causados por inline-block */
-            max-width: 100%; /* La imagen no sobrepasa el ancho del contenedor */
-            height: auto; /* Mantiene la proporción de la imagen */
-            margin: 0 auto; /* Centra la imagen si sobra espacio */
+            width: auto; /* La imagen ajusta su anchura automáticamente */
+            height: auto; /* La imagen ajusta su altura automáticamente */
+        }
+        h1 {
+            display: none; /* Esto asegura que no se muestre el h1 */
         }
         h2 {
             font-size: 24px;
@@ -60,7 +61,8 @@
     <header>
         <img src="https://attitudehiringapp.github.io/buttonredirection-app/2BannerLinkedIn.png" alt="Encabezado Attitude & Hiring">
     </header>
-    <h2>Descarga nuestra App o accede a nuestra plataforma y regístrate</h2>
+    <!-- <h1>Attitude & Hiring</h1> Esto se ha eliminado -->
+    <h2>Descarga nuestra App o accede a nuestra plataforma y registrate</h2>
     <h3>Selecciona una opción</h3>
     <div class="button-container">
         <button onclick="redirigir('https://play.google.com/store/apps/details?id=com.niveliv.AppWebTTIPubAttitude&pcampaignid=web_share')">Play Store</button>
