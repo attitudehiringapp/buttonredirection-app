@@ -12,15 +12,10 @@
             margin: 0;
             padding: 0;
         }
-        header {
-            width: 100%;
-        }
-        header img {
-            width: auto; /* La imagen ajusta su anchura automáticamente */
-            height: auto; /* La imagen ajusta su altura automáticamente */
-        }
-        h1 {
-            display: none; /* Esto asegura que no se muestre el h1 */
+        img {
+            width: 100%;  /* Esto hace que la imagen ocupe todo el ancho disponible */
+            height: auto;  /* Mantiene la proporción original de la imagen */
+            display: block;  /* Elimina cualquier espacio blanco debajo de la imagen */
         }
         h2 {
             font-size: 24px;
@@ -58,10 +53,7 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="https://attitudehiringapp.github.io/buttonredirection-app/2BannerLinkedIn.png" alt="Encabezado Attitude & Hiring">
-    </header>
-    <!-- <h1>Attitude & Hiring</h1> Esto se ha eliminado -->
+    <img src="https://attitudehiringapp.github.io/buttonredirection-app/2BannerLinkedIn.png" alt="Encabezado Attitude & Hiring">
     <h2>Descarga nuestra App o accede a nuestra plataforma y registrate</h2>
     <h3>Selecciona una opción</h3>
     <div class="button-container">
