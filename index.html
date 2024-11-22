@@ -14,10 +14,14 @@
         }
         header {
             width: 100%;
+            height: 300px; /* Altura fija para el encabezado */
+            overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+            position: relative;
         }
         header img {
-            width: auto;
-            height: auto;
+            width: 100%;
+            height: 100%; /* Asegura que la imagen cubra todo el espacio */
+            object-fit: cover; /* Hace que la imagen cubra el contenedor sin distorsionar */
         }
         h1, h2, h3 {
             margin-top: 10px;
@@ -66,7 +70,8 @@
     <header>
         <img src="https://attitudehiringapp.github.io/buttonredirection-app/2BannerLinkedIn.png" alt="Encabezado Attitude & Hiring">
     </header>
-    <h1>Attitude & Hiring</h1>
+    <!-- Eliminar el h1 si no quieres que aparezca -->
+    <!-- <h1>Attitude & Hiring</h1> -->
     <h2>Descarga nuestra App o accede a nuestra plataforma y registrate</h2>
     <h3>Selecciona una opción</h3>
     <div class="button-container">
