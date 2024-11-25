@@ -11,6 +11,7 @@
             height: 100%;
             display: flex;
             flex-direction: column; /* Asegura que los elementos estén en columnas */
+            font-size: 16px; /* Ajusta el tamaño base del texto */
         }
         header {
             flex: 0 0 auto; /* Solo ocupa el espacio necesario para la imagen */
@@ -29,31 +30,32 @@
             align-items: center;
             justify-content: center; /* Centra el contenido verticalmente */
             background-color: #eef6fc;
+            padding: 20px; /* Espaciado interno para evitar bordes pegados */
         }
         h2, h3 {
             color: #004085;
-            margin: 10px 0;
+            margin: 15px 0;
         }
         h2 {
-            font-size: 24px;
+            font-size: 2rem; /* Tamaño del texto grande */
         }
         h3 {
-            font-size: 20px;
+            font-size: 1.5rem; /* Texto secundario */
         }
         .button-container {
             display: flex;
             flex-direction: column;
             gap: 20px;
-            max-width: 300px;
+            max-width: 400px; /* Limitar el ancho máximo */
             width: 100%;
         }
         button {
             background-color: #b8daff;
             color: #004085;
             border: 1px solid #91c2f6;
-            padding: 15px 20px;
+            padding: 20px 30px; /* Tamaño más grande */
             border-radius: 5px;
-            font-size: 18px;
+            font-size: 1.25rem; /* Botones más legibles */
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
