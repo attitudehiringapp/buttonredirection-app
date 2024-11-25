@@ -9,7 +9,6 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden; /* Elimina el desplazamiento vertical */
         }
         body {
             font-family: Arial, sans-serif;
@@ -17,46 +16,43 @@
         }
         header {
             width: 100%;
-            height: 100vh; /* Ocupa toda la ventana del navegador */
+            height: 300px; /* Puedes ajustar esta altura */
             overflow: hidden;
             position: relative;
         }
         header img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Asegura que la imagen cubra el espacio */
-            object-position: center; /* Centra la imagen */
+            object-fit: cover; /* La imagen llena el espacio del encabezado */
+            object-position: center;
         }
-        h1, h2, h3 {
-            margin-top: 10px;
-            margin-bottom: 5px;
-        }
-        h1 {
-            font-size: 40px;
+        h2, h3 {
+            text-align: center;
             color: #004085;
         }
         h2 {
             font-size: 24px;
-            color: #004085;
+            margin: 20px 0 10px;
         }
         h3 {
             font-size: 20px;
-            color: #004085;
+            margin: 10px 0 20px;
         }
         .button-container {
             margin: 30px auto;
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: 20px;
             max-width: 300px;
+            text-align: center;
         }
         button {
             background-color: #b8daff;
             color: #004085;
             border: 1px solid #91c2f6;
-            padding: 30px 40px;
+            padding: 15px 20px;
             border-radius: 5px;
-            font-size: 22px;
+            font-size: 18px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -74,9 +70,7 @@
     <header>
         <img src="https://attitudehiringapp.github.io/buttonredirection-app/2BannerLinkedIn.png" alt="Encabezado Attitude & Hiring">
     </header>
-    <!-- Eliminar el h1 si no quieres que aparezca -->
-    <!-- <h1>Attitude & Hiring</h1> -->
-    <h2>Descarga nuestra App o accede a nuestra plataforma y registrate</h2>
+    <h2>Descarga nuestra App o accede a nuestra plataforma y regístrate</h2>
     <h3>Selecciona una opción</h3>
     <div class="button-container">
         <button onclick="redirigir('https://play.google.com/store/apps/details?id=com.niveliv.AppWebTTIPubAttitude&pcampaignid=web_share')">Play Store</button>
