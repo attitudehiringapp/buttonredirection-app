@@ -5,23 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attitude & Hiring</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #eef6fc;
+        html, body {
             margin: 0;
             padding: 0;
+            height: 100%;
+            overflow: hidden; /* Elimina el desplazamiento vertical */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef6fc;
         }
         header {
             width: 100%;
-            height: 300px; /* Altura fija del encabezado */
-            overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+            height: 100vh; /* Ocupa toda la ventana del navegador */
+            overflow: hidden;
             position: relative;
         }
         header img {
-            width: 100%; /* Ancho completo */
-            height: 100%; /* Altura completa */
-            object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionar */
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Asegura que la imagen cubra el espacio */
             object-position: center; /* Centra la imagen */
         }
         h1, h2, h3 {
