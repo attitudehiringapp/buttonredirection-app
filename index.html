@@ -9,60 +9,60 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            font-size: 1vw; /* Tamaño base relativo al ancho del viewport */
             display: flex;
-            flex-direction: column; /* Asegura que los elementos estén en columnas */
-            font-size: 16px; /* Ajusta el tamaño base del texto */
+            flex-direction: column;
         }
         header {
-            flex: 0 0 auto; /* Solo ocupa el espacio necesario para la imagen */
+            flex: 0 0 auto; /* Ocupa el espacio necesario sin ser flexible */
             width: 100%;
-            background-color: #eef6fc; /* Color de fondo en caso de que la imagen no llene */
         }
         header img {
             width: 100%;
-            height: auto; /* Ajusta la altura proporcionalmente al ancho */
-            display: block; /* Evita el espacio blanco adicional */
+            height: auto; /* Ajusta proporcionalmente sin cortar ni deformar */
+            display: block;
         }
         main {
             flex: 1; /* Ocupa todo el espacio restante */
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center; /* Centra el contenido verticalmente */
+            justify-content: center; /* Centra vertical y horizontalmente */
             background-color: #eef6fc;
-            padding: 20px; /* Espaciado interno para evitar bordes pegados */
+            padding: 2vh; /* Espaciado interno relativo a la altura */
         }
         h2, h3 {
             color: #004085;
-            margin: 15px 0;
+            text-align: center;
+            margin: 2vh 0; /* Márgenes relativos a la altura */
         }
         h2 {
-            font-size: 2rem; /* Tamaño del texto grande */
+            font-size: 2.5rem; /* Tamaño grande para h2 */
         }
         h3 {
-            font-size: 1.5rem; /* Texto secundario */
+            font-size: 2rem; /* Tamaño para h3 */
         }
         .button-container {
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            max-width: 400px; /* Limitar el ancho máximo */
+            gap: 3vh; /* Separación vertical entre botones */
             width: 100%;
+            max-width: 600px; /* Limitar ancho máximo */
         }
         button {
             background-color: #b8daff;
             color: #004085;
             border: 1px solid #91c2f6;
-            padding: 20px 30px; /* Tamaño más grande */
+            padding: 1.5rem 2rem; /* Botones más grandes */
             border-radius: 5px;
-            font-size: 1.25rem; /* Botones más legibles */
+            font-size: 1.8rem; /* Texto grande en botones */
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
         button:hover {
             background-color: #91c2f6;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
         }
         button:active {
             transform: translateY(0);
