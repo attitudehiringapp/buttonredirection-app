@@ -37,8 +37,8 @@
             color: #004085;
             text-align: center;
             margin: 2vh 0;
-            word-break: keep-all; /* Evita cortes de línea innecesarios */
-            white-space: nowrap; /* Asegura que el texto no se parta */
+            word-break: keep-all;
+            white-space: nowrap;
         }
         h2 {
             font-size: 2.5rem;
@@ -49,10 +49,10 @@
         .button-container {
             display: flex;
             flex-direction: column;
+            align-items: stretch; /* Asegura que los botones ocupen el mismo ancho */
             gap: 3vh;
             width: 100%;
             max-width: 600px;
-            align-items: center; /* Centrar botones horizontalmente */
         }
         button {
             background-color: #b8daff;
@@ -60,11 +60,14 @@
             border: 1px solid #91c2f6;
             padding: 0.5rem 1rem; /* Espaciado interno adaptable */
             border-radius: 5px;
-            font-size: 1.5rem; /* Ajusta el tamaño del texto */
+            font-size: 1.5rem;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            display: inline-block; /* Tamaño ajustado al contenido */
+            display: flex;
+            justify-content: center; /* Centrar texto horizontalmente */
+            align-items: center; /* Centrar texto verticalmente */
+            flex: 1; /* Todos los botones tendrán la misma altura */
         }
         button:hover {
             background-color: #91c2f6;
