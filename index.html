@@ -14,6 +14,7 @@
             font-family: 'Montserrat', Arial, sans-serif;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
         }
         header {
             flex: 0 0 auto;
@@ -58,7 +59,7 @@
             background-color: #b8daff;
             color: #004085;
             border: 1px solid #91c2f6;
-            padding: 1rem 1rem; /* Ajusta espacio interno */
+            padding: 1rem;
             border-radius: 5px;
             font-size: 1.5rem;
             cursor: pointer;
@@ -67,11 +68,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-grow: 1; /* Hace que la altura se adapte */
-            min-height: 60px; /* Asegura un mínimo tamaño */
+            min-height: 70px; /* Asegura un tamaño mínimo */
+            height: auto;
+            width: 100%; /* Los botones ocuparán el mismo ancho */
         }
         .button-container button {
-            flex-grow: 1; /* Asegura altura consistente */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
         }
         button:hover {
             background-color: #91c2f6;
@@ -79,6 +84,11 @@
         }
         button:active {
             transform: translateY(0);
+        }
+
+        h2.centered {
+            text-align: center; /* Asegura que el texto esté centrado */
+            margin-top: 3vh; /* Espacio superior para el texto */
         }
     </style>
 </head>
@@ -93,7 +103,9 @@
             <button onclick="redirigir('https://play.google.com/store/apps/details?id=com.niveliv.AppWebTTIPubAttitude&pcampaignid=web_share')">Play Store</button>
             <button onclick="redirigir('https://apps.apple.com/es/app/attitude-hiring/id6736949254')">App Store</button>
             <button onclick="redirigir('https://portal.attitude.tech/Trabajadores/Candi/Candisaludo.aspx')">Plataforma Trabajador</button>
-            <h2 style="text-align: center;">Si ya eres cliente, accede a nuestra plataforma</h2>
+        </div>
+        <h2 class="centered">Si ya eres cliente, accede a nuestra plataforma</h2>
+        <div class="button-container">
             <button onclick="redirigir('https://portal.attitude.tech/Clientes/Privado/Login.aspx?ReturnUrl=%2fClientes%2fPrivado%2fSesionfin.aspx')">Plataforma Cliente</button>
         </div>
     </main>
