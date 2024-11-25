@@ -4,61 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attitude & Hiring</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         html, body {
             margin: 0;
             padding: 0;
             height: 100%;
             font-size: 1vw; /* Tamaño base relativo al ancho del viewport */
+            font-family: 'Montserrat', Arial, sans-serif; /* Fuente Montserrat */
             display: flex;
             flex-direction: column;
         }
         header {
-            flex: 0 0 auto; /* Ocupa el espacio necesario sin ser flexible */
+            flex: 0 0 auto;
             width: 100%;
         }
         header img {
             width: 100%;
-            height: auto; /* Ajusta proporcionalmente sin cortar ni deformar */
+            height: auto;
             display: block;
         }
         main {
-            flex: 1; /* Ocupa todo el espacio restante */
+            flex: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center; /* Centra vertical y horizontalmente */
+            justify-content: center;
             background-color: #eef6fc;
-            padding: 2vh; /* Espaciado interno relativo a la altura */
+            padding: 2vh;
         }
         h2, h3 {
             color: #004085;
             text-align: center;
-            margin: 2vh 0; /* Márgenes relativos a la altura */
+            margin: 2vh 0;
+            word-break: keep-all; /* Evita cortes de línea innecesarios */
+            white-space: nowrap; /* Asegura que el texto no se parta */
         }
         h2 {
-            font-size: 2.5rem; /* Tamaño grande para h2 */
+            font-size: 2.5rem;
         }
         h3 {
-            font-size: 2rem; /* Tamaño para h3 */
+            font-size: 2rem;
         }
         .button-container {
             display: flex;
             flex-direction: column;
-            gap: 3vh; /* Separación vertical entre botones */
+            gap: 3vh;
             width: 100%;
-            max-width: 600px; /* Limitar ancho máximo */
+            max-width: 600px;
+            align-items: center; /* Centrar botones horizontalmente */
         }
         button {
             background-color: #b8daff;
             color: #004085;
             border: 1px solid #91c2f6;
-            padding: 1.5rem 2rem; /* Botones más grandes */
+            padding: 0.5rem 1rem; /* Espaciado interno adaptable */
             border-radius: 5px;
-            font-size: 1.8rem; /* Texto grande en botones */
+            font-size: 1.5rem; /* Ajusta el tamaño del texto */
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: inline-block; /* Tamaño ajustado al contenido */
         }
         button:hover {
             background-color: #91c2f6;
